@@ -1,0 +1,25 @@
+.header{
+    text-align: center;
+    padding: 20px;
+}
+
+.file-input-section,
+.btn-wrapper{
+    text-align: center;
+}
+
+.input-wrapper{
+    display: inline-block;
+    padding: 20px;
+    border: 1px dashed #d2d2d2;
+    border-radius: 4px;
+}
+
+.output-list{
+    height: 300px;
+    overflow: auto;
+    .list-item{
+        padding: 8px;
+    }
+}
+

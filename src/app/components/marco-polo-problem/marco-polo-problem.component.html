@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="center header">
+    <h3>Marco Polo Problem</h3>
+  </div>
+
+  <form class="form-inline">
+      <label for="inlineFormInputName2">From: </label>
+      <input type="text" [(ngModel)]="from" class="form-control mb-2 mr-sm-2" name="from">
+
+      <label for="inlineFormInputName2">To: </label>
+      <input type="text" [(ngModel)]="to" class="form-control mb-2 mr-sm-2" name="to">
+
+      <button class="btn btn-primary mb-2" (click)="getResult()">Generate Cheatsheet</button>
+
+  </form>    
+
+  <div *ngIf="cheatsheet">
+    <h4>Cheatsheet: </h4>
+    <div>
+      {{cheatsheet}}
+    </div>
+  </div>
+  
+
+</div>

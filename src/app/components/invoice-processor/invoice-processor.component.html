@@ -1,0 +1,34 @@
+  <div class="header">
+    <h2>Invoice Processor</h2>
+  </div>
+  
+  <div class="file-input-section container">
+  
+    <div class="input-wrapper">
+      <form>
+        <div class="form-group">
+          <input type="file" class="form-control-file" id="exampleFormControlFile1" (change)="onFileChange($event)">
+        </div>
+  
+        <div class="btn-wrapper">
+            <button type="button" class="btn btn-success" (click)="onProcess()">Process File</button>
+        </div>
+      </form>
+      
+      
+    </div>
+  
+  </div>
+  
+  <div class="container result-section" *ngIf="invoiceNumbers?.length">
+    <div class="center">
+      <h3>Result</h3> (Total: {{invoiceNumbers.length}})
+    </div>
+    <div class="output-list">
+      <div *ngFor="let number of invoiceNumbers">
+        {{number}}
+      </div>
+    </div>
+  </div>
+  
+  
