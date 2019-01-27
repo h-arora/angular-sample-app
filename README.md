@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-##What is the difference between imports, declarations, and providers?
+## What is the difference between imports, declarations, and providers?
 
 `Declarations` is an array of components, directives etc that are defined in our app module. It registers/wires the components to the angular application module.
 
@@ -14,7 +14,7 @@ An angular app usually depends upon one or more modules. `Imports` is an array o
 
 `Providers` is an array of services that are a part of our app module. This is where we register services with the dependency injector of the app module.
 
-##What is the difference between components, directives, models, modules, and services?
+## What is the difference between components, directives, models, modules, and services?
 
 `Directives` attach to an element and usually used to manipulate DOM. For instance, ngFor and ngIf are directives which we use very often.
 
